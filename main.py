@@ -1,9 +1,4 @@
-# 
 import ssl
-# ssl._create_default_https_context = ssl._create_unverified_context
-# url = input("Ingresa la URL")
-# print(url)
-# # YouTube('https://youtu.be/2lAe1cqCOXo').streams.first().download()
 from pytubefix import YouTube
 from pytubefix.cli import on_progress
 from flask import Flask, render_template, request, send_file

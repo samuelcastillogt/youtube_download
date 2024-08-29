@@ -3,7 +3,12 @@ const button = document.getElementById("search");
 const categoria = document.getElementById("categoria");
 const url = document.getElementById("url");
 categoria.addEventListener("change", () => {
-  button.toggleAttribute("disabled");
+  if(categoria.value != "Selecciona el tipo de descarga"){
+    button.removeAttribute("disabled")
+  }else{
+    button.setAttribute("disabled", true)
+  }
+  
 });
 button.addEventListener("click", async () => {
   const response = await fetch("/", {
@@ -14,7 +19,11 @@ button.addEventListener("click", async () => {
   const result = await response.json();
   HTMLInjector(result)
 });
-
+const loader = ()=>{
+  container.innerHTML = `<div class="spinner-border" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>`
+}
 const HTMLInjector = (result)=>{
   if(Number(categoria.value <= 2)){
     container.innerHTML = `<div class="card" style="width: 18rem;">
@@ -33,5 +42,4 @@ const HTMLInjector = (result)=>{
     </div>
     </div>`;
   }
-  
 }

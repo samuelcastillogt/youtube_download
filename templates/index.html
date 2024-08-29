@@ -1,35 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Descargar de Youtube</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <h1 class="navbar-brand">Descargar videos de Youtube</h1>
           </div>
         </div>
       </nav>
-      <div class="container">
-        <select class="form-select" aria-label="Default select example" id="categoria">
-          <option selected>Selecciona el tipo de descarga</option>
-          <option value="1">Video HD</option>
-          <option value="2">Video LD</option>
-          <option value="3">MP3</option>
-        </select>
-        <div class="input-group input-group-lg">
-
+      <div class="container-md hero">
+<div class="container mb-2">
+  <select class="form-select" aria-label="Default select example" id="categoria">
+    <option selected>Selecciona el tipo de descarga</option>
+    <option value="1">Video HD</option>
+    <option value="2">Video LD</option>
+    <option value="3">MP3</option>
+  </select>
+</div>
+        <div class="input-group">
             <input type="text" class="form-control" aria-label="Sizing example input" id="url" placeholder="URL del video a descargar"  aria-describedby="inputGroup-sizing-lg">
             <button type="button" class="btn btn-primary" id="search" disabled="true">Buscar</button>
           </div>
       </div>
       <div class="container" id="result">
       </div>
+      <div class="container">
+        <h2 class="h2">Descarga videos de Youtube sin aununcios</h2>
+        <p>Con nuestra herramienta puedes <strong>descargar videos de Youtube</strong> sin <b>publicidad</b>, solo necesitas seleccionar el tipo de descarga, pegar el link de del <b>video para descargar</b>, precionar el boton de descarga y listo, tu <i>video</i> ya esta listo.</p>
+        <h3 class="h3">Sin publicidad y sin redirecciones</h3>
+        <p>Nuestra aplicacion es simple, facil de usar y de una solo pagina, no hay redirecciones que te llevan a paginas <b>llenas de publicidad</b> o que <strong>descarge virus</strong>, todas las opciones estan en la misma pagina.</p>
+      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
       <script src="./index.js"></script>
+      <footer class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <h3 class="navbar-brand">Una pagina de <a href="">Samuel Castillo</a></h3>
+        
+      </footer>
 </body>
 </html>
